@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tp2</string>
+    <string name="conv1">DINAR TUNISIEN --> EURO</string>
+    <string name="conv2">EURO --> DINAR TUNISIEN</string>
+</resources>

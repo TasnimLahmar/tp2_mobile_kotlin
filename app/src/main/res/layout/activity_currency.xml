@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyActivity">
+
+    <EditText
+        android:id="@+id/montant"
+        android:layout_width="230dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="168dp"
+        android:ems="10"
+        android:hint="Donner un montant..."
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/DTtoE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/DTtoE"
+        android:layout_width="247dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="92dp"
+        android:text="DINAR TUNISIEN --> EURO"
+        app:layout_constraintBottom_toTopOf="@+id/EtoDT"
+        app:layout_constraintEnd_toEndOf="@+id/resultat"
+        app:layout_constraintStart_toStartOf="@+id/EtoDT"
+        app:layout_constraintTop_toBottomOf="@+id/montant" />
+
+    <Button
+        android:id="@+id/EtoDT"
+        android:layout_width="253dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="77dp"
+        android:text="EURO --> DINAR TUNISIEN"
+        app:layout_constraintBottom_toTopOf="@+id/resultat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DTtoE" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="109dp"
+        android:text="Resultat de conversion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/EtoDT"
+        app:layout_constraintTop_toBottomOf="@+id/EtoDT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
